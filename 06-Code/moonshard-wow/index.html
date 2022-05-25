@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<title>MoonShard-WoW</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<link rel="shortcut icon" href="_resources/images/1024px-WoW_icon.svg.png"/>
+	<link href="_resources/css/style.css" rel="stylesheet">
+</head>
+<body onload="time()">
+<main class="anim">
+	<a href="URL" class="logo"></a>
+	<div class="timer clearfix anim" id="int">
+	</div>
+	<a href="Register_URL" class="register anim">!Registrate Ahora!</a>
+	
+	<div class="about anim">
+		<p>
+		MoonShard-WoW Private Server
+		</p>
+		<a href="https://www.facebook.com/MoonShardWoW" class="fb">Facebook</a>
+	</div>
+
+</main>
+
+<footer class="anim">
+	<p>© 2022 <a href="#">MoonShard WoW</a> - Private Server</p>
+	<p>By <a href="https://github.com/jizapata3/HP_Killlers_GameServerWebApp_5119_AWD">Hp-Killers </a>. Visitanos en<a href="https://discord.gg/jdwGVjbRnt"> Discord</a>.</p>
+	</footer>
+
+<div class="preloader-overlay"></div>
+<div class="preloader-logo"></div>
+
+<!-- implementation -->
+<script src="_resources/js/jquery-3.1.1.min.js"></script>
+<script src="_resources/js/scripts.js"></script>
+
+
+<script>
+timeend= new Date(2022, 6, 26, 20, 00);
+
+function time() {
+    today = new Date();
+    today = Math.floor((timeend-today)/1000);
+    tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+    tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+    thour=today%24; today=Math.floor(today/24);
+    timestr="<div class='time'><p>"+ today +"</p>days</div><div class='time'><p>"+ thour+"</p>hours</div><div class='time'><p>"+tmin+"</p>minutes</div><div class='time'><p>"+tsec+"</p>seconds</div>";
+    document.getElementById('int').innerHTML=timestr;
+    window.setTimeout("time()",1000);
+} 
+</script>
+
+</body>
+</html>
+  
