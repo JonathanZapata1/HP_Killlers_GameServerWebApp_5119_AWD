@@ -5,43 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ServerPage</title>
+    <title>News</title>
 </head>
 <body>
-    <header>
+<header>
             <div class="nav-cont flex-box sticky">
                 <h2 class="nav-title"> BLIZZ CMS </h2>
                 <nav class=" navbar flex-box justify-left">
-                    <div><a href="">Start</a></div>
+                    <div><a href="index.php">Start</a></div>
                     <div><a href="news.php">News</a></div>
                     <div><a href="">Store</a></div>
                     <div><a href="">About</a></div>
                 </nav>
             </div>
     </header>
-    <section class="intro">
-        <h2 class="intro-title"> BLIZZ CMS</h2>
+    <section class="intro2">
+    <br>
+    <br>
+    <br>
+    <br>
+        <h2 class="intro-title">LATEST NEWS & UPDATES</h2>
         <div class="container centered">
             <br>
             <br>
             <br>
-            <br>
-            <p >
-            where the world of new content begins 
-            <p>
-            <br>
-            <br>
-            <br>
-            <p >
-                A new world is wainting you to conquer and enjoy
-                </p>
-            <br>
-            <br>
+    <br>
+    <br>
+    <br>
         </div>
     </section>
+    <section class="updates">
+    <h1>#WOW</h1>
+    <div class="column">
+      <div class="photo">
+        <img src="img/image1.jpg" />
+      </div>
+      <div class="photo">
+        <img src="img/image2.jpg" />
+      </div>
+      <div class="photo">
+        <img src="img/image3.jpg" />
+      </div>
+    </div>
+  </section>
     <section class="container">
         <div>
-            <h2> What does this server offer?</h2>
+            <h2> VISIT THE STORE New Store Items!</h2>
             <br>
             <br>
             <p>
@@ -53,23 +62,23 @@
     </section>
     <section class="dark-blue">
         <div class="container">
-            <h2>Why you should choose us?</h2>
+            <h2>Start Riding on MoonShard</h2>
             <br>
             <br>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro ab, magnam dolorem minus est aperiam a. Praesentium temporibus ea, dolor itaque alias cupiditate iure, voluptatum voluptas modi fuga ipsa!
+            You can discover fresh new items on our store for a limited time!!!!
             </p>
             <br>
             <br>
         </div>
     </section>
-    <section class="intro-2">
-        <div class="container">
-            <h2>The best posibilties with the less price</h2>
+    <section class="container">
+        <div>
+            <h2> REWARDS Recruit A Friend</h2>
             <br>
             <br>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro ab, magnam dolorem minus est aperiam a. Praesentium temporibus ea, dolor itaque alias cupiditate iure, voluptatum voluptas modi fuga ipsa!
+Be prepared to go to Outland with the [Pack Name].
             </p>
             <br>
             <br>
@@ -86,5 +95,5 @@
             </div>
         </div>
     </footer>
-</body>
+    </body>
 </html>
