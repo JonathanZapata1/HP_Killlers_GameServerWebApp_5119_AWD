@@ -26,6 +26,9 @@ background-repeat: repeat-x;
   font-size: 1.1275em;
 }
 
+.store{
+    color: azure;
+}
 
 /* container, flex-box*/
 .container{
@@ -107,6 +110,11 @@ background-repeat: repeat-x;
     background-image: url("img/background2.jpg");
     background-size: cover;
     font-size:2em;
+}
+.intro3{
+    background-image: url("img/background.jpg");
+    background-size: cover;
+    font-size:2em; 
 }
 .intro-title{
     align-self: center;
