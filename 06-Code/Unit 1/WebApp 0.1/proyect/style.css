@@ -1,0 +1,133 @@
+/* author: christopher Yepez */
+/* general designs */
+/*
+    COLORES DEL PROYECTO:
+    negro : #12090f
+    azul oscuro : #122e43
+    azul medio: #146285
+    azul: #1f9fd0
+    celeste: #20dad8
+    blanco : #e6edf6
+*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+*{
+  font-family: 'Raleway', sans-serif;
+  padding:0px;
+  margin:0px;
+}
+
+body{
+background: rgb(18,46,67);
+background: linear-gradient(150deg, rgba(18,46,67,1) 0%, rgba(20,98,133,1) 35%,
+ rgba(31,159,208,1) 100%);
+background-repeat: repeat-x;
+  color:#F5F2E7;
+  margin: 0px;
+  font-size: 1.1275em;
+}
+
+
+/* container, flex-box*/
+.container{
+    width: auto;
+    margin: auto 3em;
+    padding: 0.5em;
+    
+}
+.formContainer{
+    max-width: 27.5em;
+}
+
+.flex-box{
+    display:flex;
+    flex-direction: row;
+}
+.flex-box div{
+    padding:0.5em;
+    margin:auto 0.25em;
+}
+.self-left{
+    justify-content:flex-end;
+}
+.dark-blue{
+    background-color: #122e43 ;
+}
+.mid-blue{
+    background-color: #146285;
+}
+.blue{
+    background-color: #1f9fd0;
+}
+
+
+/* navbar*/
+.nav-cont{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background: #20dad8;
+    /*border-bottom: 4px solid #12090f;
+    justify-content: center;*/
+}
+.navbar{
+    background: #146285;
+}
+.navbar div{
+    padding:0.3125em;
+    margin: auto 0.3125em;
+    
+}
+.navbar div a{
+    color: #F5F2E7;
+    text-decoration: none;
+    font-size:1em;
+    transition:0.5s;
+}
+.navbar div a:hover{
+    color: #12090f;
+}
+.nav-title{
+    font-size:1.75em;
+    width:100%;
+    color: #122e43; 
+    letter-spacing: 0.225em;
+    align-self: center;
+    text-align: center;
+    margin: 0.3125em ;   
+}
+
+/*intro*/
+
+.intro{
+    background-image: url("img/background1.jpg");
+    background-size: cover;
+    font-size:2em;
+}
+.intro-title{
+    align-self: center;
+    text-align: center;
+    font-size:2.5em;
+    padding: 0.5em;
+}
+.centered{
+    text-align: center
+}
+
+/*footer*/
+
+.foot{
+    background-color: #12090f;
+    padding:0.5em;
+    color: #F5F2E7;
+    font-size: 1.5em;
+}
+.intro-2{
+    background-image: url("img/background1.jpg");
+    background-size: cover;
+    font-size:1.5em;
+}
+.social-network{
+    padding:0.25em;
+    margin:0.125em;
+    justify-content: center;
+}
