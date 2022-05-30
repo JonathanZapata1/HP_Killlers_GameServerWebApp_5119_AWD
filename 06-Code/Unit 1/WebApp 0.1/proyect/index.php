@@ -14,7 +14,7 @@
                 <nav class=" navbar flex-box justify-left">
                     <div><a href="">Start</a></div>
                     <div><a href="news.php">News</a></div>
-                    <div><a href="">Store</a></div>
+                    <div><a href="store.php">Store</a></div>
                     <div><a href="">About</a></div>
                 </nav>
             </div>
