@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MasterkinG32.CoM"/>
+    <meta name="generator" content="MoonShard-WoW.com"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="description" content="<?php echo $antiXss->xss_clean(get_config("page_title")); ?>">
     <meta name="description" content="<?php echo $antiXss->xss_clean(get_config("page_title")); ?>">

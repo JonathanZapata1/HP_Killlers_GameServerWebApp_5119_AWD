@@ -505,9 +505,9 @@ require_once 'header.php'; ?>
              <?php } ?>
             <div class="box1">
                 Discord
-                <hr style="border-color: #00CCFF;">
-                <iframe src="https://discordapp.com/widget?id=376650959532589057&theme=dark" width="330"
-                        height="600" allowtransparency="true" frameborder="0"></iframe>
+                <hr style="border-color: #00CCFF;">                
+		<iframe src="https://discord.com/widget?id=963273980909846528&theme=dark" width="330" 
+			height="600" allowtransparency="true" frameborder="0"></iframe>
             </div>
         </div>
     </div>
