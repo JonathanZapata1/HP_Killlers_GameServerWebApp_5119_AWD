@@ -1,23 +1,10 @@
 <?php
 
 
-
-
-
-
-
-
-
-
-
 namespace Composer;
 
 use Composer\Autoload\ClassLoader;
 use Composer\Semver\VersionParser;
-
-
-
-
 
 
 class InstalledVersions

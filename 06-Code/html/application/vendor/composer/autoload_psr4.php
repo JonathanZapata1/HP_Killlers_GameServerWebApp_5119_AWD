@@ -16,6 +16,7 @@ return array(
     'Symfony\\Polyfill\\Iconv\\' => array($vendorDir . '/symfony/polyfill-iconv'),
     'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
     'PHPMailer\\PHPMailer\\' => array($vendorDir . '/phpmailer/phpmailer/src'),
-    'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
     'Gregwar\\' => array($vendorDir . '/gregwar/captcha/src/Gregwar'),
+    'Medoo\\' => array($vendorDir . '/catfan/medoo/src'),
+    
 );
