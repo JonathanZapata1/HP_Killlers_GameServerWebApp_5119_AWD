@@ -2,7 +2,7 @@
 /*---------------------------------------------------------------------
 Titulo del servidor
 ---------------------------------------------------------------------*/
-$config['baseurl'] = "http://localhost"; 
+$config['baseurl'] = "https://moonshard-wow.com/"; 
 $config['page_title'] = "MoonShard-WoW";
 $config['language'] = "spanish";
 $config['supported_langs'] = [
@@ -129,13 +129,13 @@ La cuenta de Soap sirve para crear cuentas y demás, ya que usa una cuenta de Ad
 
 Requiere la extensión de php.ini extension=gd2
 ---------------------------------------------------------------------*/
-$config['soap_for_register'] = false;
+$config['soap_for_register'] = true;
 $config['soap_host'] = '127.0.0.1';
 $config['soap_port'] = '7878';
 $config['soap_uri'] = 'urn:TC';
 $config['soap_style'] = 'SOAP_RPC';
-$config['soap_username'] = 'admin_soap';
-$config['soap_password'] = 'admin_soap';
+$config['soap_username'] = 'sebaslove';
+$config['soap_password'] = 'sebasloveqtx';
 $config['soap_ca_command'] = 'account create {USERNAME} {PASSWORD}';
 $config['soap_cp_command'] = 'account set password {USERNAME} {PASSWORD} {PASSWORD}';
 $config['soap_asa_command'] = 'account set addon {USERNAME} {EXPANSION}';
@@ -150,21 +150,21 @@ Información para la conexión de la base de datos de cuentas (auth)
 ---------------------------------------------------------------------*/
 $config['db_auth_host'] = '127.0.0.1';
 $config['db_auth_port'] = '3306';
-$config['db_auth_user'] = 'root';
-$config['db_auth_pass'] = 'ascent';
-$config['db_auth_dbname'] = 'emucoach_v15_vip_auth';
+$config['db_auth_user'] = 'cata';
+$config['db_auth_pass'] = 'opelfox';
+$config['db_auth_dbname'] = 'auth';
 /*---------------------------------------------------------------------
 Información para la conexión de la base de datos de persojaes (characters)
 ---------------------------------------------------------------------*/
 $config['realmlists'] = array(
     "1" => array(
         'realmid' => 1, 
-        'realmname' => "Sebas",
+        'realmname' => "Moonshard",
         'db_host' => "127.0.0.1", 
         'db_port' => "3306", 
-        'db_user' => "root", 
-        'db_pass' => 'ascent', 
-        'db_name' => "emucoach_v15_vip_char"
+        'db_user' => "cata", 
+        'db_pass' => 'opelfox', 
+        'db_name' => "characters"
     )
 );
 
