@@ -78,13 +78,13 @@ video{
     margin: auto 0.3125em;
     
 }
-.navbar div a{
+.navbar a{
     color: #F5F2E7;
     text-decoration: none;
     font-size:1em;
     transition:0.5s;
 }
-.navbar div a:hover{
+.navbar a:hover{
     color: #12090f;
 }
 .nav-title{
@@ -96,7 +96,13 @@ video{
     text-align: center;
     margin: 0.3125em ;   
 }
+.absolute{
+    position:absolute;
+}
 
+.moonshard-navbar{
+    background-color:#146285;
+}
 /*intro*/
 
 /*.intro{
