@@ -34,45 +34,75 @@
     </header>
         <section>
             <div class="container">
-                <h1>Add Truck</h1>    
-                <form action="addTruck.jsp" method="post">
-                    <div class="grid"> 
-                        <div class="row p-2">
-                            <label>ID:</label>
-                            <input type="number" name="id">
+                <h1>Join Our Comunnity</h1>    
+                <p> Upload your user and the character you use for this server</p>
+                <p> Write correctly you account to link it with the data of the game </p>
+                <form action="addUser.jsp" method="post">   
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">ID: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="your ID" name="id">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Name: </label>
-                            <input type="text" name="name">
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">User Name: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="your username" name="username">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Brand: </label>
-                            <input type="text" name="brand">
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Password: </label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="colFormLabel" placeholder="password" name="password">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Primary Color: </label>
-                            <input type="text" name="primaryColor">
+                        <h3>Enter you Character</h3>
+                        
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Character ID: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="character ID" name="characterId">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Secondary Color: </label>
-                            <input type="text" name="secondaryColor">
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Character Name: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="your name" name="characterName">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Year Of Realease: </label>
-                            <input type="number" name="yearOfRealease">
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Character Class: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="your class" name="characterClass">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Price: </label>
-                            <input type="text" name="price">
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Character Description: </label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="descriptionLabel" rows="3" name="description"></textarea>
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <label>Is Available: </label>
-                            <input type="text" name="isAvailable">
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Weapon: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="your main weapon" name="weapon">
+                            </div>
                         </div>
-                        <div class="row p-2">
-                            <input type="submit" value="Add Truck"/>
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Level: </label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="colFormLabel" placeholder="the level of your account" name="level">
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-group row">
+                             <label for="colFormLabel" class="col-sm-2 col-form-label">Still Active?: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="colFormLabel" placeholder="true/false" name="active">
+                            </div>
+                        </div> 
+                        <div class="form-group row btn">
+                            <input type="submit" value="Add User"/>
+                        </div>
                 </form>
             </div>
         </section>

@@ -26,6 +26,7 @@
             <nav class="moonshard-navbar navbar navbar-expand-lg navbar-dark justify-content-between">
                 <img src="img/wow-logo.png" width="120" height="80" class="" alt="">
                 <a class="nav-brand nav-item nav-link " href="index.jsp">  MoonShard - WOW <a>
+<<<<<<< HEAD
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav mr-sm-2">
                                 <a class="nav-item nav-link" href="views/addUserForm.jsp"> Join our Community</a>
@@ -80,3 +81,82 @@
                         </footer>
                         </body>
                         </html>
+=======
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-sm-2">
+                        <a class="nav-item nav-link" href="views/addUserForm.jsp"> Join our Community</a>
+                        <a class="nav-item nav-link" href="views/viewUsers.jsp">View Actual Users</a>
+                        <a class="nav-item nav-link" href="views/news.jsp">News</a>
+                        <a class="nav-item nav-link" href="view/about.jsp">About</a>
+                    </div>
+                </div>  
+            </nav>
+    </header>
+    <section class="intro">
+        <img src="img/wow-logo.png" width="300" height="300" class="absolute" alt="">
+        <h3 class="intro-title" style="text-shadow: 4px 4px 8px #000000"> MoonShard - WOW </h3>
+        <div class="container centered">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="text-shadow: 2px 2px 4px #000000">
+            Where the world of new content begins 
+            <p>
+            <p style="text-shadow: 4px 4px 8px #000000">
+                A new world is wainting you to conquer and enjoy
+                </p>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section class="container">
+        <div>
+            <h2> What does this server offer?</h2>
+            <br>
+            <br>
+            <p>
+                The server is capable of user registration that corresponding to the game and will have access to armament objects and the last realizations
+            </p>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section class=" dark-blue">
+        <div class="container">
+            <h2>Why you should choose us?</h2>
+            <br>
+            <br>
+            <p>
+               Moon Shard is a platform with an extensive database, and computer security can mention the constant updates to improve the day to day server
+            </p>
+            <br>
+            <br>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="container" >
+            <h2>The best posibilties with the less price</h2>
+            <br>
+            <br>
+            <p>
+               Go to store where you will find the best offers of our market in addition to new skins and new champions
+            </p>
+            <br>
+            <br>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="container">
+            To get more information <br>
+            contact us in the next social networks.
+            <div class="flex-box social-network">
+                <div class=""> Facebook</div>
+                <div class=""> Twitter</div>
+                <div class=""> Github </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+>>>>>>> f91fe59a9362d7976e3a909b38ecde067fff6371
