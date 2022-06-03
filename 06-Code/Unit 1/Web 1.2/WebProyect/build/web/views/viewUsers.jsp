@@ -17,17 +17,27 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+         <link rel="stylesheet" href="../style.css">
         <title>MoonShard-Wow</title>
+            <link rel="icon" 
+      type="favicon/ico" 
+      href="../favicon.ico">
     </head>
     <body>
-        <header>
-            <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="nav-item m-2" href="views/addUserForm.jsp">Join our Community</a>  
-            <a class="nav-item m-2"  href="index.jsp">View Users</a>   
-               </nav>          
-            </div>
-        </header> 
+    <header>               
+            <nav class="moonshard-navbar navbar navbar-expand-lg navbar-dark justify-content-between">
+                <img src="../img/wow-logo.png" width="120" height="80" class="" alt="">
+                <a class="nav-brand nav-item nav-link " href="../index.jsp">  MoonShard - WOW <a>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-sm-2">
+                        <a class="nav-item nav-link" href="addUserForm.jsp"> Join our Community</a>
+                        <a class="nav-item nav-link" href="viewUsers.jsp">View Actual Users</a>
+                        <a class="nav-item nav-link" href="news.jsp">News</a>
+                        <a class="nav-item nav-link" href="about.jsp">About</a>
+                    </div>
+                </div>  
+            </nav>
+    </header>
         <section>
             <table class="table table-dark table-hover" border="1">
                 <thead>

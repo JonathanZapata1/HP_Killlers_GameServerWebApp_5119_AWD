@@ -24,10 +24,20 @@ video{
     left:50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: -1;
+    background-size:cover;
     
 }
 
-
+		
+body{
+background: rgb(18,46,67);
+background: linear-gradient(150deg, rgba(18,46,67,1) 0%, rgba(20,98,133,1) 35%,
+ rgba(31,159,208,1) 100%);
+background-repeat: repeat-x;
+  color:#F5F2E7;
+  margin: 0px;
+  font-size: 1.1275em;
+}
 
 .store{
     color: azure;
@@ -78,13 +88,13 @@ video{
     margin: auto 0.3125em;
     
 }
-.navbar div a{
+.navbar a{
     color: #F5F2E7;
     text-decoration: none;
     font-size:1em;
     transition:0.5s;
 }
-.navbar div a:hover{
+.navbar a:hover{
     color: #12090f;
 }
 .nav-title{
@@ -96,24 +106,26 @@ video{
     text-align: center;
     margin: 0.3125em ;   
 }
+.absolute{
+    position:absolute;
+}
 
+.moonshard-navbar{
+    background-color:#146285;
+}
 /*intro*/
 
-/*.intro{
-    background-image: url("img/background1.jpg");
-    background-size: cover;
+.intro{
     font-size:2em;
-}*/
-/*.intro2{
-    background-image: url("img/background2.jpg");
-    background-size: cover;
+    font-weight: bolder;
+    color:#e6edf6;
+}
+.intro2{
     font-size:2em;
 }
 .intro3{
-    background-image: url("img/background.jpg");
-    background-size: cover;
     font-size:2em; 
-}*/
+}
 .intro-title{
     align-self: center;
     text-align: center;
@@ -132,11 +144,9 @@ video{
     color: #F5F2E7;
     font-size: 1.5em;
 }
-/*.intro-2{
-    background-image: url("img/background1.jpg");
-    background-size: cover;
+.intro-2{
     font-size:1.5em;
-}*/
+}
 .social-network{
     padding:0.25em;
     margin:0.125em;
