@@ -122,6 +122,7 @@ background-repeat: repeat-x;
 }
 .intro2{
     font-size:2em;
+    
 }
 .intro3{
     font-size:2em; 
@@ -155,7 +156,8 @@ background-repeat: repeat-x;
 .intro-2 h2{
     font-size: 65px;
 }
-.updates h1{
+.updates h1,.container h2{
+    color:white;
     width: 80%;
      text-align: center;
      padding-top: 100px ;
@@ -182,4 +184,10 @@ background-repeat: repeat-x;
 }
 .photo img:hover{
     transform: scale(1.20);
+}
+.container p{
+    color:white;
+     text-align: center;
+     padding-top: 100px ;
+     font-size: 20px;
 }
