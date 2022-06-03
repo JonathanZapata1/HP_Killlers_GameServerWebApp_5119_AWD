@@ -38,19 +38,16 @@
     </header>
     <section class="intro">
         <img src="img/wow-logo.png" width="300" height="300" class="absolute" alt="">
-        <h3 class="intro-title"> MoonShard - WOW </h3>
+        <h3 class="intro-title" style="text-shadow: 4px 4px 8px #000000"> MoonShard - WOW </h3>
         <div class="container centered">
             <br>
             <br>
             <br>
             <br>
-            <p >
-            where the world of new content begins 
+            <p style="text-shadow: 2px 2px 4px #000000">
+            Where the world of new content begins 
             <p>
-            <br>
-            <br>
-            <br>
-            <p >
+            <p style="text-shadow: 4px 4px 8px #000000">
                 A new world is wainting you to conquer and enjoy
                 </p>
             <br>
@@ -63,7 +60,7 @@
             <br>
             <br>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam repellat eligendi quidem, officiis culpa eos doloremque ullam beatae saepe tempora similique in eaque veritatis reprehenderit, dicta sit est facilis?
+                The server is capable of user registration that corresponding to the game and will have access to armament objects and the last realizations
             </p>
             <br>
             <br>
@@ -75,19 +72,19 @@
             <br>
             <br>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro ab, magnam dolorem minus est aperiam a. Praesentium temporibus ea, dolor itaque alias cupiditate iure, voluptatum voluptas modi fuga ipsa!
+               Moon Shard is a platform with an extensive database, and computer security can mention the constant updates to improve the day to day server
             </p>
             <br>
             <br>
         </div>
     </section>
     <section class="intro">
-        <div class="container">
+        <div class="container" >
             <h2>The best posibilties with the less price</h2>
             <br>
             <br>
             <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius porro ab, magnam dolorem minus est aperiam a. Praesentium temporibus ea, dolor itaque alias cupiditate iure, voluptatum voluptas modi fuga ipsa!
+               Go to store where you will find the best offers of our market in addition to new skins and new champions
             </p>
             <br>
             <br>
