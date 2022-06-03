@@ -16,13 +16,22 @@ public class User {
 
     public User() {
     }
-
+    
+    public User(String id,String username,String password,String characterId, String characterName, String characterClass, String description, String weapon, int level, boolean active){
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        Character character = new Character(characterId, characterName,characterClass,description,weapon,level,active);
+        this.character = character;
+    }
+    
     public User(String id, String username, String password, Character character) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.character = character;
     }
+    
 
     /**
      * @return the id
@@ -82,7 +91,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "id=" + id + ", username=" + username + ", password=" + password + ", character=" + character + '}';
+        return "User{" + "id=" + id + ", username=" + username + ", password=" + password + ", character=" + character.toString() + '}';
     }
     
     
