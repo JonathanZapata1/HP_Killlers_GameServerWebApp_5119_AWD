@@ -23,6 +23,7 @@
     <title>MoonShard - WOW</title>
 </head>
 <body>
+    <video src="img/video.mp4" autoplay="true" muted="true" loop="true"   ></video>
     <header>
             <div class="nav-cont flex-box sticky">
                 <h2 class="nav-title"> MoonShard - WOW </h2>
@@ -35,6 +36,7 @@
             </div>
     </header>
     <section class="intro">
+       
         <h2 class="intro-title"> MoonShard - WOW </h2>
         <div class="container centered">
             <br>
