@@ -1,0 +1,67 @@
+.headerpart1 {
+    background-image: url('../img/headerbar1.png');
+    width: 500px;
+    height: 99px;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 150px;
+
+}
+
+.main-logo {
+    max-width: 180px;
+    max-height: 220px;
+}
+
+.middle {
+
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 650px;
+    Bottom: 100px;
+    clear: rigth;
+}
+
+.headerpart2 {
+    background-image: url('../img/headerbar2.png');
+    width: 500px;
+    height: 60px;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 240px;
+    left: 825px;
+    float: left;
+}
+
+.nav-modify {
+    height: 180px;
+    width: auto;
+}
+
+.headerpart1 a {
+    color: rgb(19, 149, 172);
+    text-decoration: none;
+    text-align: center;
+    padding-left: 2px;
+}
+
+.headerpart2 a {
+    color: rgb(19, 149, 172);
+    text-decoration: none;
+    text-align: right;
+    padding-left: 2px;
+}
+
+.header-text1 {
+    text-align: center;
+    text-shadow: 0 0 2px rgb(9, 255, 222);
+}
+
+.header-text2 {
+    text-align: center;
+    margin-left: 2px;
+    text-shadow: 0 0 2px rgb(9, 255, 222);
+}
