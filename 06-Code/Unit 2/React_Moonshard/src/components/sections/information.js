@@ -1,7 +1,7 @@
-import '../pages/stylesComp.css'
+import './header.css'
 
 const Infor = () =>(
-<div className='download-style'>
+<div className='download-style grid-item item2'>
       <div className='information-style'>
         <p>Server Information</p>_______________________________________
         <p>Reamlist: logon.mooonshard.wow.com</p>

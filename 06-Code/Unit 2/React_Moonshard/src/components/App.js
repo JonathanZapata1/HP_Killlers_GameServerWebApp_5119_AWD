@@ -6,6 +6,8 @@ import StatusServer from "./pages/statusServer";
 import TopPlayers from "./pages/topPlayers";
 import Contact from "./pages/contact";
 import Powerslap from "./video/video.mp4";
+
+import Body from '../components/sections/body.js'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -25,9 +27,11 @@ const App = () => (
   }}>
   <source src={Powerslap} type="video/mp4" />
    </video>
-     <div className="header">
+     <div>
       <Router>
-        <Header />
+        <Header/>
+        <Body/>
+
         <Switch>
           <Route path="/register"><Register /></Route>
           <Route path="/how-to-connect"><HowToConnect /></Route>
