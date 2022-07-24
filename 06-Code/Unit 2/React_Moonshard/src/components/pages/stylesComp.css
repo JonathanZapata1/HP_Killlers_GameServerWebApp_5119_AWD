@@ -1,14 +1,13 @@
 
 /*welcome position*/
-.down-style{
+.down-style {
     background-color: rgb(3, 0, 17);
     opacity: 0.7;
     display: flex;
     position: relative;
-    bottom: 19.375em;
-    left: 2.1875em;
-    width: 55.625em;
-    height: 12.5em;
+    width: 90%;
+    height: auto;
+    justify-content: center;
 }
 .down-text{
     text-align: center;
@@ -16,19 +15,4 @@
     margin-left: 1.25em;
     color:white;
 }
-.rules-style{
-    background-color: rgb(3, 0, 17);
-    opacity: 0.7;
-    display: flex;
-    position: relative;
-    bottom: 19.375em;
-    left: 2.1875em;
-    width: 55.625em;
-    height: 12.5em;
-}
-.rules-text{
-    text-align: center;
-    padding-left:0.125em;
-    margin-left: 1.25em;
-    color:white;
-}
+
