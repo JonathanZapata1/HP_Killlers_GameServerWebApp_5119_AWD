@@ -1,26 +1,31 @@
 const User = require('../model/User')
 
-const createUser = (req,res) =>{
-    let user = new User({
-        id :req.body.id,
-        name: req.body.name,
-        userName :req.body.userName,
-        email: req.body.email,
-        gameName:req.body.gameName,
-        mainClass: req.body.mainClass,
-        timePlayed: req.body.timePlayed,
-        isActive: req.body.isActive,
-        pointsObtained: req.body.pointsObtained,
-        accountMoney:req.body.accountMoney,
-        lastTimeVisited:req.body.lastTimeVisited,
-        spendedMoney:req.body.spendedMoney,
-        favoriteItem:req.body.favoriteItem
-    })
-
-    user.save((err, cli) => {
-        err && res.status(500).json(err.message)
-        res.status(200).json(cli)
-    })
+const createUser = async (req,res) =>{
+    if (await User.findOne({id: req.body.id })!==null){
+        res.status(400).send({Error : "User Already Exists"})
+    }
+    else{
+        let user = new User({
+            id :req.body.id,
+            name: req.body.name,
+            userName :req.body.userName,
+            email: req.body.email,
+            gameName:req.body.gameName,
+            mainClass: req.body.mainClass,
+            timePlayed: req.body.timePlayed,
+            isActive: req.body.isActive,
+            pointsObtained: req.body.pointsObtained,
+            accountMoney:req.body.accountMoney,
+            lastTimeVisited:req.body.lastTimeVisited,
+            spendedMoney:req.body.spendedMoney,
+            favoriteItem:req.body.favoriteItem
+        })
+    
+        await user.save((err, cli) => {
+            err && res.status(500).json(err.message)
+            res.status(200).send(cli)
+        })
+    }   
 }
 
 const getUsers = (req,res) => {
