@@ -1,18 +1,27 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './stylesComp.css';
 import Carrsel from '../sections/carrusel.js';
+import Information from '../sections/information.js'
+import Discord from '../sections/discord';
 
 const Register = () => (
   <div>
      <Carrsel/>
-      <div className='download-style'>
-        <div className='information-style'>
-        <p>Server Information</p>_______________________________________
-        <p>Reamlist: logon.mooonshard.wow.com</p>
-        <p>Game version: 4.3.4</p>
-        <p>Game path: Download</p>
+     <Information/> 
+     <Discord/>
+     <div className='rules-style'>
+      <div className='rules-text'>
+        <h4>Rules private server, </h4> 
+          <ul>
+            <li>
+            No hackers
+            </li>
+            <li>
+              Play and fun
+            </li>
+          </ul>
       </div>
-      </div>
+    </div>
   </div>
 );
 export default Register

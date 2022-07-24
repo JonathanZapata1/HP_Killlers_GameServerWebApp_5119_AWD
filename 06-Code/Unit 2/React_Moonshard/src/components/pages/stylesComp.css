@@ -69,7 +69,7 @@ img{
     max-height: 200px;
 }
 /*welcome position*/
-.welcome-style{
+.down-style{
     background-color: rgb(3, 0, 17);
     opacity: 0.7;
     display: flex;
@@ -79,7 +79,22 @@ img{
     width: 690px;
     height: 240px;
 }
-.welcome-text{
+.down-text{
+    text-align: center;
+    padding-left:2px;
+    margin-left: 20px;
+}
+.rules-style{
+    background-color: rgb(3, 0, 17);
+    opacity: 0.7;
+    display: flex;
+    position: relative;
+    bottom: 510px;
+    left: 110px;
+    width: 690px;
+    height: 140px;
+}
+.rules-text{
     text-align: center;
     padding-left:2px;
     margin-left: 20px;
