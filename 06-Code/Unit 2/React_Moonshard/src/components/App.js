@@ -7,9 +7,10 @@ import TopPlayers from "./pages/topPlayers";
 import Contact from "./pages/contact";
 import PageNotFound from "./pages/pageNotFound";
 import Powerslap from "./video/video.mp4";
-
+import Forum from "./pages/forum";
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Footer from "./sections/footer";
 
 
 const App = () => (
@@ -35,14 +36,17 @@ const App = () => (
           <Route path="/how-to-connect"exact component={HowToConnect}/>
           <Route path="/status-server" exact component={StatusServer}/>
           <Route path="/top-players" exact component={TopPlayers}/>
-          <Route path="/contact" exact component={Contact}/>
+          <Route path="/forum" exact component={Forum}/>
 
           <Route path="/" exact component={Home}/>
           <Route component={PageNotFound}/>
+          
         </Switch>
+        <br/>
+        <Footer/>
       </Router>
       </div>
-      <br/>
+
   </div>
 )
 

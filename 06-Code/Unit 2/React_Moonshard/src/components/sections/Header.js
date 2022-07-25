@@ -18,7 +18,7 @@ const Header = () => (
             <div className='headerpart2'>
                     <NavLink to="/status-server" exact> Server Status </NavLink>
                     <NavLink to="/top-players" exact> Top players </NavLink>
-                    <NavLink to="/contact" exact> Contacts </NavLink>
+                    <NavLink to="/forum" exact> Forum </NavLink>
             </div>
         </nav>
     </header>

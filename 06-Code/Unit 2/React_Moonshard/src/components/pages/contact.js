@@ -15,5 +15,6 @@ const Contact = () => (
     </div>
   <Discord/>
 </div>
+
 );
 export default Contact
