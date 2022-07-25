@@ -1,5 +1,6 @@
 import './stylesComp.css'
 import '../sections/header.css'
+import Messages from '../sections/messages'
 
 const Forum = () => (
     <div className='grid forum p-2'>
@@ -11,12 +12,14 @@ const Forum = () => (
                     <button className='btn btn-primary'>
                         FIND
                     </button>
+                   
             </div>
             <div className='col p-2'>
-
+            
             </div>
+            
         </div>
-
+        <Messages/>
     </div>
 
 );

@@ -4,7 +4,7 @@ import Register from "./pages/register"
 import HowToConnect from "./pages/howToConnect";
 import StatusServer from "./pages/statusServer";
 import TopPlayers from "./pages/topPlayers";
-import Contact from "./pages/contact";
+
 import PageNotFound from "./pages/pageNotFound";
 import Powerslap from "./video/video.mp4";
 import Forum from "./pages/forum";
