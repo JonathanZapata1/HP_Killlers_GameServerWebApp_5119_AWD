@@ -5,6 +5,7 @@ import HowToConnect from "./pages/howToConnect";
 import StatusServer from "./pages/statusServer";
 import TopPlayers from "./pages/topPlayers";
 import Contact from "./pages/contact";
+import PageNotFound from "./pages/pageNotFound";
 import Powerslap from "./video/video.mp4";
 
 import './App.css';
@@ -27,16 +28,17 @@ const App = () => (
   <source src={Powerslap} type="video/mp4" />
    </video>
      <div>
-      <Router>
-        <Header/>
+     <Router>
+        <Header />
         <Switch>
-          <Route path="/register"><Register /></Route>
-          <Route path="/how-to-connect"><HowToConnect /></Route>
-          <Route path="/status-server"><StatusServer /></Route>
-          <Route path="/top-players"><TopPlayers /></Route>
-          <Route path="/contact"><Contact /></Route>
+          <Route path="/register" exact component={Register}/>
+          <Route path="/how-to-connect"exact component={HowToConnect}/>
+          <Route path="/status-server" exact component={StatusServer}/>
+          <Route path="/top-players" exact component={TopPlayers}/>
+          <Route path="/contact" exact component={Contact}/>
 
-          <Route path="/"><Home /></Route>
+          <Route path="/" exact component={Home}/>
+          <Route component={PageNotFound}/>
         </Switch>
       </Router>
       </div>
