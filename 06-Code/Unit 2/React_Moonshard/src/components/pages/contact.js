@@ -8,6 +8,11 @@ const Contact = () => (
   <div className="main-body">
   <Carrsel/>
   <Information/> 
+  <div className='down-style item3'>
+      <div className='down-text'>
+      
+      </div>
+    </div>
   <Discord/>
 </div>
 );
