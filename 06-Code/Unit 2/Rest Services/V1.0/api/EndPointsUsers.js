@@ -12,5 +12,6 @@ router.delete('/:id',UsersController.deleteUser)
 router.get('/class/:mainClass',UsersController.getByClass)
 router.get('/ranking/:id',UsersController.calculateRPoints)
 router.get('/gifts/giveaway',UsersController.createMoneyGiveaway)
-router.post('/services/:id',UsersController.changeFavoriteItem)
+router.put('/services/items/:id',UsersController.changeFavoriteItem)
+router.get('/ranking/status/all', UsersController.getbyOrderInRPoints)
 module.exports = router
