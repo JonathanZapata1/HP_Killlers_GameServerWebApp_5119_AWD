@@ -2,7 +2,7 @@ const UsersController = require('../controller/Users')
 const express = require('express')
 const router = express.Router()
 
-//router.metodo_CRUD('uri',)
+
 router.post('/',UsersController.createUser)
 router.get('/', UsersController.getUsers)
 router.put('/fix/:id',UsersController.updateUserId)
