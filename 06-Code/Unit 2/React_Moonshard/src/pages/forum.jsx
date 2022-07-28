@@ -1,6 +1,8 @@
-import './stylesComp.css'
-import '../sections/header.css'
-import Messages from '../sections/messages'
+
+import '../assets/css/pages/forum.css';
+import '../assets/css/pages/main.css';
+
+import Messages from '../components/messages'
 
 const Forum = () => (
     <div className='grid forum p-2'>

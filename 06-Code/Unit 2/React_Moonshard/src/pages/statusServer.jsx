@@ -1,9 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './stylesComp.css'
-import Carrsel from '../sections/carrusel';
-import Information from '../sections/information';
-import Discord from '../sections/discord.js';
-import img from '../img/statusserver.png'
+import '../assets/css/pages/statusServer.css';
+import '../assets/css/pages/main.css';
+import Carrsel from '../components/carrusel';
+import Information from '../components/information';
+import Discord from '../components/discord.jsx';
+import img from '../assets/img/statusserver.png'
 
 const ServerStatus = () => (
 <div className="main-body">

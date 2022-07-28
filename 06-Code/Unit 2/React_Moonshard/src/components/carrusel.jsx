@@ -1,9 +1,11 @@
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../pages/stylesComp.css'
-import img1 from '../img/slide1.jpg'
-import img2 from '../img/slide2.jpg'
-import img3 from '../img/slide3.jpg'
+import '../assets/css/components/carrousel.css';
+import '../assets/css/components/main.css';
+
+import img1 from '../assets/img/slide1.jpg'
+import img2 from '../assets/img/slide2.jpg'
+import img3 from '../assets/img/slide3.jpg'
 
 const Carru = () => (
     <div className="position-carrousel grid-item item1">

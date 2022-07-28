@@ -1,0 +1,50 @@
+/* body  */
+
+.main-body{
+    width: 98%;
+    height: 98%;
+    display: grid;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+    'carousel carousel carousel information'
+    'content1 content1  content1 discord';    
+}
+
+.main-body .grid-item{
+  text-align: center;
+  font-size: 20px;
+  margin:0.5em;
+  padding:0.5em;
+}
+
+.item1{
+    grid-area: carousel; 
+}
+.item2{
+    grid-area: information; 
+}
+.item3{
+    grid-area: content1; 
+}
+.item4{
+    grid-area: discord; 
+}
+
+/*welcome position*/
+.down-style {
+    background-color: rgb(3, 0, 17);
+    opacity: 0.7;
+    display: flex;
+    position: relative;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+}
+.down-text{
+    text-align: center;
+    padding-left:0.125em;
+    margin-left: 1.25em;
+    color:white;
+}

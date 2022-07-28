@@ -1,16 +1,20 @@
-import Header from "./sections/Header"
+import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// PAGES
 import Home from "./pages/home"
 import Register from "./pages/register"
 import HowToConnect from "./pages/howToConnect";
 import StatusServer from "./pages/statusServer";
 import TopPlayers from "./pages/topPlayers";
-
 import PageNotFound from "./pages/pageNotFound";
-import Powerslap from "./video/video.mp4";
+import Powerslap from "./assets/media/video.mp4";
 import Forum from "./pages/forum";
-import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Footer from "./sections/footer";
+
+
+//Components
+import Header from "./components/Header"
+import Footer from "./components/footer";
 
 
 const App = () => (

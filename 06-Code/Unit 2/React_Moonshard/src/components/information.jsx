@@ -1,4 +1,5 @@
-import './header.css'
+import '../assets/css/components/information.css';
+import '../assets/css/components/main.css';
 
 const Infor = () =>(
 <div className='download-style grid-item item2'>

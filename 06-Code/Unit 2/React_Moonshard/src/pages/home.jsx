@@ -1,9 +1,10 @@
 
-import './stylesComp.css'
-import '../sections/header.css'
-import Carrsel from '../sections/carrusel';
-import Information from '../sections/information';
-import Discord from '../sections/discord.js';
+import '../assets/css/pages/home.css';
+import '../assets/css/pages/main.css';
+
+import Carrsel from '../components/carrusel';
+import Information from '../components/information';
+import Discord from '../components/discord';
 
 
 const Home = () => (

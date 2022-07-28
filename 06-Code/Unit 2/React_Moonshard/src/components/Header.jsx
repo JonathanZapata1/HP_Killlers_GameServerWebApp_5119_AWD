@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import "./header.css";
-import logo from '../img/wow-logo.png';
+import logo from '../assets/img/wow-logo.png';
 
+import '../assets/css/components/header.css';
+import '../assets/css/components/main.css';
 const Header = () => (
     <header>
         <nav className='nav-modify'>

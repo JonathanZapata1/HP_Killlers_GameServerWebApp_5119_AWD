@@ -1,4 +1,5 @@
-import './style404.css'
+import '../assets/css/pages/pageNotFound.css';
+import '../assets/css/pages/main.css';
 
 
 const Register = () => (

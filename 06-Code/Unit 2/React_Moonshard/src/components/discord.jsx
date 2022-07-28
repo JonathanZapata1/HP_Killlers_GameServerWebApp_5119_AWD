@@ -1,5 +1,6 @@
 import * as React from 'react'
-import './header.css'
+import '../assets/css/components/discord.css';
+import '../assets/css/components/main.css';
 
 const Discord = () => (
   <div className='discord-style grid-item item4'>
