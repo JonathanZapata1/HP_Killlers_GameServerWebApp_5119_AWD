@@ -1,0 +1,223 @@
+header {
+    height: 12em;
+}
+
+/*New nav*/
+.nav-modify {
+    background-image: url('../img/navbar.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1200px 180px;
+    align-items: center;
+    padding: 4rem;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav-modify ul {
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-modify a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-modify li {
+    position: relative;
+    bottom: 3rem;
+}
+
+.nav-modify ul li {
+    display: inline-block;
+    line-height: 80px;
+
+}
+
+.nav-modify ul li a {
+    color: rgb(6, 121, 129);
+    font-size: 18px;
+    padding: 5px 10px;
+    text-shadow: 0.5px 0.5px rgb(6, 121, 129);
+}
+
+.part1 {
+    position: relative;
+    right: 9.5rem;
+}
+
+.part2 {
+    position: relative;
+    left: 9rem;
+}
+
+
+
+/*Carrusel img*/
+
+.img-car {
+    width: 15.625em;
+    height: 21.875em;
+}
+
+/* body  */
+
+.main-body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:
+        'carousel carousel carousel information'
+        'content1 content1  content1 discord';
+}
+
+.main-body .grid-item {
+    text-align: center;
+    font-size: 20px;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+}
+
+.item1 {
+    grid-area: carousel;
+    display: flex;
+
+}
+
+.item2 {
+    grid-area: information;
+    display: flex;
+}
+
+.item3 {
+    grid-area: content1;
+    display: flex;
+}
+
+.item4 {
+    grid-area: discord;
+    display: flex;
+}
+
+
+/*information position*/
+.download-style {
+    background-color: rgb(3, 0, 17);
+    opacity: 0.7;
+    display: flex;
+    position: relative;
+    width: 95%;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+.information-style {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    width: 95%;
+}
+
+/*discord position*/
+.discord-style {
+    background-color: rgb(3, 0, 17);
+    opacity: 0.7;
+    display: flex;
+    width: 95%;
+
+    position: relative;
+}
+
+/* carousel position */
+.position-carrousel {
+    width: 97%;
+    height: auto;
+    position: relative;
+ 
+}
+
+/*Table*/
+.top-table {
+    width: 40em;
+    position: relative;
+    right: 0.2em;
+    top: 10px;
+}
+
+/*nav menu*/
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(rgb(1, 14, 15));
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width:863px) {
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .nav-modify {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+        transform: translateY(-100vh);
+        flex-direction: row;
+
+    }
+
+    header .responsive_nav {
+        transform: none;
+    }
+
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .nav-modify ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .main-body {
+        width: 100%;
+        height:100%;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-areas:
+            'carousel carousel '
+            'information information'
+            'content1 content1'
+            'discord discord';
+    }
+
+
+
+}

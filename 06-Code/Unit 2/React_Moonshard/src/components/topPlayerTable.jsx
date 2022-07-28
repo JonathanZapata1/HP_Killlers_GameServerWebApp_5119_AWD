@@ -1,7 +1,10 @@
 import Table from 'react-bootstrap/Table';
 
+<<<<<<< HEAD:06-Code/Unit 2/React_Moonshard/src/components/topPlayerTable.jsx
 import '../assets/css/components/topPlayerTable.css';
 
+=======
+>>>>>>> d4fb267b4063c7177b1373f0c4930d0e4dde2bf1:06-Code/Unit 2/React_Moonshard/src/components/sections/topPlayerTable.js
 function DarkExample() {
   return (
     <div className='top-table' >

@@ -179,4 +179,31 @@ const changeFavoriteItem = async (req,res) => {
         
     }
 }
-module.exports = {createUser, getUsers, getUserById, updateUserId, updateUser,deleteUser,getByClass,calculateRPoints,createMoneyGiveaway,changeFavoriteItem}
+
+const getbyOrderInRPoints = async(req,res) => {
+    try{
+
+        const users = await User.find()
+        let rankingUsers = [];
+
+        for(let user of users){
+            let rankingPoints = 0;
+
+            rankingPoints += user.pointsObtained;
+            rankingPoints += user.timePlayed * 500;
+            rankingPoints += user.spendedMoney * 2; 
+            console.log(rankingPoints);
+            rankingUsers.push({id: user.id,userName: user.userName,rankPoints : rankingPoints});
+        }
+        rankingUsers.sort(function(a, b){return b.rankPoints - a.rankPoints})
+        res.status(200).send(
+            {rankingUsers})
+    }
+    catch(error){
+        console.log(error)
+        res.status(404).send({Error : "User not found"})
+        
+    }
+}
+
+module.exports = {createUser, getUsers, getUserById, updateUserId, updateUser,deleteUser,getByClass,calculateRPoints,getbyOrderInRPoints,createMoneyGiveaway,changeFavoriteItem}
