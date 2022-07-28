@@ -1,5 +1,4 @@
 import React from 'react';
-import './header.css';
 import Carrsel from './carrusel';
 import Information from './information.js';
 import Discord from './discord.js'

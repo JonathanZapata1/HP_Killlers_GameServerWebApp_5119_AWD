@@ -1,6 +1,6 @@
 
 import './stylesComp.css'
-import '../sections/header.css'
+import '../sections/header-responsive.css'
 import Carrsel from '../sections/carrusel';
 import Information from '../sections/information';
 import Discord from '../sections/discord.js';

@@ -5,9 +5,12 @@
     opacity: 0.7;
     display: flex;
     position: relative;
-    width: 90%;
+    width: 95%;
     height: auto;
     justify-content: center;
+    align-items: center;
+    left: 1.5em;
+    
 }
 .down-text{
     text-align: center;
@@ -32,4 +35,24 @@
     
     background-color:rgb(34, 38, 42);
     opacity: 0.7;
+}
+
+.a-download{
+    text-decoration: none;
+}
+
+/*responsive style*/
+@media only screen and (max-width:863px) {
+
+    .down-style {
+        background-color: rgb(3, 0, 17);
+        opacity: 0.7;
+        display: flex;
+        position: relative;
+        width: 97%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        right: 2em;
+    }
 }

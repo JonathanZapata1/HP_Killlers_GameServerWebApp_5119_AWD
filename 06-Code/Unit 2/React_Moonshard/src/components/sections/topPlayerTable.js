@@ -1,5 +1,5 @@
 import Table from 'react-bootstrap/Table';
-import './header.css'
+
 function DarkExample() {
   return (
     <div className='top-table' >

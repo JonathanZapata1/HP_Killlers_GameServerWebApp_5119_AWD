@@ -22,7 +22,7 @@ import Discord from '../sections/discord.js';
 <p>4. We delete the text and put the following: set realmlist "realmlist of the server"</p>
 Ex: set realmlist logon.moonshard-wow.com 
  
-        <p>Download</p>
+        <h3><a className='a-download' href='https://drive.google.com/file/d/1cf_91c0Ko6K_IioWS3A0_nJpT-X5dacw/view' >Download</a></h3>
      </div>
     </div> 
   <Discord/>
