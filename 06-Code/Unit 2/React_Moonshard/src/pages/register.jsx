@@ -7,10 +7,10 @@ import RegisterForm from '../components/registerForm';
 
 
 const Register = () => (
-  <div className="main-body">
+  <div className="main-body ">
   <Carrsel/>
   <Information/> 
-     <div className='down-style item3'>
+     <div className='down-style item3 grid-item'>
       <div className='down-text'>
       <RegisterForm/>
       </div>

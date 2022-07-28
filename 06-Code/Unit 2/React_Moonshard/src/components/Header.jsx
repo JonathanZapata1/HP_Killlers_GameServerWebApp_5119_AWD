@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import '../assets/css/components/header.css';
-import '../assets/css/components/main.css';
 
 import {FaBars,FaTimes} from 'react-icons/fa';
 import { useRef } from 'react';

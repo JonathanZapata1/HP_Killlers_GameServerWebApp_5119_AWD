@@ -2,7 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
 import '../assets/css/components/registerForm.css';
-import '../assets/css/components/main.css';
+
 
 const RegisterForm = () =>(
 <Form>

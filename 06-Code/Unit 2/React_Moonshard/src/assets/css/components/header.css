@@ -67,12 +67,14 @@ header .nav-btn {
     visibility: hidden;
     opacity: 0;
     font-size: 1.8rem;
+    position:absolute;
 }
 
 @media only screen and (max-width:863px) {
     header .nav-btn {
         visibility: visible;
         opacity: 1;
+        position:relative;
     }
 
     .nav-modify {
@@ -106,16 +108,4 @@ header .nav-btn {
         gap: 2rem;
     }
 
-    .main-body {
-        width: 100%;
-        height:100%;
-        display: grid;
-        margin-left: auto;
-        margin-right: auto;
-        grid-template-areas:
-            'carousel carousel '
-            'information information'
-            'content1 content1'
-            'discord discord';
-    }
 }

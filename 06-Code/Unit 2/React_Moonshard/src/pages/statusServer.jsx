@@ -10,7 +10,7 @@ const ServerStatus = () => (
 <div className="main-body">
   <Carrsel/>
   <Information/> 
-  <div className='down-style item3'>
+  <div className='down-style item3 grid-item'>
       <div className='down-text'>
         <br/>
         <br/>

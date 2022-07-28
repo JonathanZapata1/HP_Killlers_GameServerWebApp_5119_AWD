@@ -10,7 +10,7 @@ return(
   <div className="main-body">
     <Carrsel />
     <Information />
-    <div className='down-style item3'>
+    <div className='down-style grid-item item3'>
       <div className='down-text'>
         <p> Download the game "World of Warcraft" in its "Cataclysm" expansion. In this case you already have the game downloaded, you can adapt the realmist in the following way:</p>
         <p>1. We go into the game folder. Defaults to: C:/Program Files/World of Warcraft/data</p>
