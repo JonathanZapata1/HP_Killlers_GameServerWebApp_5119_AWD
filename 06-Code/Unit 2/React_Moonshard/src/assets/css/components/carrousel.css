@@ -3,7 +3,7 @@
 /* carousel position */
 .position-carrousel{
     display: inline-block;
-    width: 95%;
+    width: 100%;
     height: auto;
-    max-width: 90%;
+    max-width: 100%;
 }
