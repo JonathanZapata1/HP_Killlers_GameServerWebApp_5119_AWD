@@ -1,12 +1,7 @@
 import { NavLink } from 'react-router-dom';
-<<<<<<< HEAD:06-Code/Unit 2/React_Moonshard/src/components/Header.jsx
-import logo from '../assets/img/wow-logo.png';
-
 import '../assets/css/components/header.css';
 import '../assets/css/components/main.css';
-const Header = () => (
-=======
-import "./header-responsive.css";
+
 import {FaBars,FaTimes} from 'react-icons/fa';
 import { useRef } from 'react';
 
@@ -18,7 +13,6 @@ const showNavbar=()=>{
 }
 
 return(
->>>>>>> d4fb267b4063c7177b1373f0c4930d0e4dde2bf1:06-Code/Unit 2/React_Moonshard/src/components/sections/Header.js
     <header>
         <nav ref={navRef} className='nav-modify'>
             <ul className='part1'>

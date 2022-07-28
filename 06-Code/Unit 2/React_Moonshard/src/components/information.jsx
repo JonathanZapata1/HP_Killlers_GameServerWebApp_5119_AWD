@@ -1,9 +1,5 @@
-<<<<<<< HEAD:06-Code/Unit 2/React_Moonshard/src/components/information.jsx
 import '../assets/css/components/information.css';
 import '../assets/css/components/main.css';
-=======
-
->>>>>>> d4fb267b4063c7177b1373f0c4930d0e4dde2bf1:06-Code/Unit 2/React_Moonshard/src/components/sections/information.js
 
 const Infor = () =>(
 <div className='download-style grid-item item2'>
