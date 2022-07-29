@@ -1,6 +1,12 @@
+const { json } = require('body-parser');
 const User = require('../model/User')
 
 const createUser = async (req,res) =>{
+    console.log("User problem");
+    console.log(req.body);
+    if(req.body.id===null){
+        res.status(400).send({Error : "Not ID found"})
+    }
     if (await User.findOne({id: req.body.id })!==null){
         res.status(400).send({Error : "User Already Exists"})
     }
@@ -192,12 +198,11 @@ const getbyOrderInRPoints = async(req,res) => {
             rankingPoints += user.pointsObtained;
             rankingPoints += user.timePlayed * 500;
             rankingPoints += user.spendedMoney * 2; 
-            console.log(rankingPoints);
             rankingUsers.push({id: user.id,userName: user.userName,rankPoints : rankingPoints});
         }
         rankingUsers.sort(function(a, b){return b.rankPoints - a.rankPoints})
-        res.status(200).send(
-            {rankingUsers})
+        jsonRankingUsers = JSON.stringify(rankingUsers);
+        res.status(200).send(jsonRankingUsers)
     }
     catch(error){
         console.log(error)
