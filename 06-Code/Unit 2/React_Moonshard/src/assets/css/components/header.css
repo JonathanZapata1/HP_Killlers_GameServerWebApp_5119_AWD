@@ -63,18 +63,18 @@ header .nav-btn {
     background: transparent;
     border: none;
     outline: none;
-    color: var(rgb(1, 14, 15));
+    color: white;
     visibility: hidden;
     opacity: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     position:absolute;
 }
 
-@media only screen and (max-width:863px) {
+@media only screen and (max-width:860px) {
     header .nav-btn {
         visibility: visible;
         opacity: 1;
-        position:relative;
+     
     }
 
     .nav-modify {
