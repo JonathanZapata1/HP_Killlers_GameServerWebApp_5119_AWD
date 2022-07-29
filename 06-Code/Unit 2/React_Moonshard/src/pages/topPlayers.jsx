@@ -5,7 +5,6 @@ import '../assets/css/pages/main.css';
 import Carrsel from '../components/carrusel';
 import Information from '../components/information';
 import Discord from '../components/discord';
-import TopPlayerTable from '../components/topPlayerTable';
 
 
 import { getRanking } from '../services/api.js'
@@ -27,12 +26,12 @@ return(
   <Information/> 
   <div className='down-style item3 grid-item'>
       <div className='down-text'>
-            <table style={{ width: 500 }}>
-                <thead>
+            <table class="table table-bordered" style={{width:600}}>
+                <thead class="thead-light">
                     <tr>
-                        <th>ID</th>
-                        <th>USER NAME</th>
-                        <th>RANKING POINTS</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">USER NAME</th>
+                        <th scope="col" >RANKING POINTS</th>
                     </tr>
                 </thead>
                 <tbody>
