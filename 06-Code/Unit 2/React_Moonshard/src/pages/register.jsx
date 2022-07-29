@@ -41,7 +41,7 @@ const Register = () => {
         <div className='down-text'>
           <Form>
             <label> Enter your ID</label>
-            <input type="number" className="form-control" onChange={(e) => onValueChange(e)} name="id" />
+            <input style={{width:"200px",position:"relative", left:"130px"}} type="number" className="form-control" onChange={(e) => onValueChange(e)} name="id" />
             <label> Enter your Email</label>
             <input type="email" className="form-control" onChange={(e) => onValueChange(e)} name="email" />
             <label> Enter the way to be know here</label>

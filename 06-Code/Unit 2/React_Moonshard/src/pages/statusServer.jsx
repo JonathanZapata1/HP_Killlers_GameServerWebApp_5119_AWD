@@ -12,9 +12,7 @@ const ServerStatus = () => (
   <Information/> 
   <div className='down-style item3 grid-item'>
       <div className='down-text'>
-        <br/>
-        <br/>
-        <br/>
+       
       <img
           className="d-block w-100 img"
           src={img}

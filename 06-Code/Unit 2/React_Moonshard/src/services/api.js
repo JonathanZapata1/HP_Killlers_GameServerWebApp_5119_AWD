@@ -4,7 +4,7 @@ import axios from "axios"
 export const addUser = async(user) => {
 
     try{
-        const response = await axios.post(`http://localhost:3005/GameServer/users`,
+        const response = await axios.post(`http://54.210.116.27:3005/GameServer/users`,
         {id: user.id,userName: user.userName,
             email :user.email,gameName: user.gameName,
         mainClass: user.mainClass, timePlayed: user.timePlayed,
@@ -20,7 +20,7 @@ spendedMoney: user.spendedMoney, favoriteItem: user.favoriteItem })
 
 export const getRanking = async() => {
     try{
-        const response = await axios.get(`http://localhost:3005/GameServer/users/ranking/status/all`);
+        const response = await axios.get(`http://54.210.116.27:3005/GameServer/users/ranking/status/all`);
         return response
     }
     catch(error){
@@ -31,7 +31,7 @@ export const getRanking = async() => {
 export const getUserById = async(id) => { 
     
         try {
-            return await axios.get(`http://localhost:3005/GameServer/users/${id}`);    
+            return await axios.get(`http://54.210.116.27:3005/GameServer/users/${id}`);    
         } catch (error) {
             console.log("Error while calling getUser: " + error);
         }
