@@ -27,6 +27,7 @@ const Register = () => {
 
   async function addUserInformation(e) {
     e.preventDefault();
+
     await addUser(user);
   }
 
@@ -38,7 +39,7 @@ const Register = () => {
         <div className='down-text'>
           <form>
              <label> Enter your ID</label>
-              <input type="email" className="form-control" onChange={(e)=> onValueChange(e)} name= "id"/>
+              <input type="number" className="form-control" onChange={(e)=> onValueChange(e)} name= "id"/>
               <label> Enter your Email</label>
               <input type="email" className="form-control" onChange={(e)=> onValueChange(e)} name= "email"/>
               <label> Enter the way to be know here</label>
