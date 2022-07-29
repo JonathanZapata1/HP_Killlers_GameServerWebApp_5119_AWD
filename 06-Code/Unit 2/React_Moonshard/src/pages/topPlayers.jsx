@@ -5,7 +5,7 @@ import '../assets/css/pages/main.css';
 import Carrsel from '../components/carrusel';
 import Information from '../components/information';
 import Discord from '../components/discord';
-
+import Table from 'react-bootstrap/Table';
 
 import { getRanking } from '../services/api.js'
 const Top = () => {
@@ -26,8 +26,8 @@ return(
   <Information/> 
   <div className='down-style item3 grid-item'>
       <div className='down-text'>
-            <table class="table table-bordered" style={{width:600}}>
-                <thead class="thead-light">
+            <Table striped bordered hover variant="dark" style={{width:600}}>
+                <thead >
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">USER NAME</th>
@@ -46,7 +46,7 @@ return(
                     }
                    
                 </tbody>
-            </table>
+            </Table>
       </div>
     </div>
   <Discord/>
