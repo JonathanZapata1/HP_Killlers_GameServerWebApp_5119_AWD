@@ -1,22 +1,17 @@
 
-/*forum */
-.forum{
-    width: 90%;
-    max-width: 100%;
-    align-self: center;
-    align-content: center;
-    margin-top: 2.5em;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.forum .col{
-    margin: 0.5em;
-    
+.menu-forum{
     background-color:rgb(34, 38, 42);
     opacity: 0.7;
 }
+.statusPresentationF{
+    background-image: url(../../img/3-3.jpg);
+    height:22em;
+    background-size:cover;
+    background-position: center;
+    
+}
 
-.a-download{
-    text-decoration: none;
+.img1-forum{
+    width: 20em;
+    height: auto;
 }

@@ -1,27 +1,32 @@
 
 import '../assets/css/pages/forum.css';
 import '../assets/css/pages/main.css';
+import Nav from 'react-bootstrap/Nav';
 
-import Messages from '../components/messages'
 
 const Forum = () => (
-    <div className='grid forum p-2'>
-        <div className='row'>
-            <div className='col p-2'>
-                    <p>
-                        Find by name:
-                    </p>
-                    <button className='btn btn-primary'>
-                        FIND
-                    </button>
-                   
-            </div>
-            <div className='col p-2'>
-            
-            </div>
-            
-        </div>
-        <Messages/>
+    <div className='Forum'>
+        <br/>
+         <div className= "statusPresentationF"></div>
+         <br/>
+    <div className='menu-forum'>
+  
+        <Nav fill variant="tabs" defaultActiveKey="/home">
+      <Nav.Item>
+        <Nav.Link href="/forum/home" >Home Forums</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/forum/all" eventKey="link-1">All</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/forum/news" eventKey="link-2">News</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/forum/favorites" eventKey="link-3" >Favorites</Nav.Link>
+      </Nav.Item>
+    </Nav>
+    </div>
+  
     </div>
 
 );
