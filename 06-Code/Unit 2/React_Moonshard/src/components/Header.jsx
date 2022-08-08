@@ -28,11 +28,11 @@ return(
                         <li className="nav-item"> <NavLink to="/status-server" className="nav-link" exact> SERVER STATUS </NavLink></li>
                         <li className="nav-item"> <NavLink to="/top-players" className="nav-link" exact> TOP PLAYERS </NavLink></li>
                         <li className="nav-item">  <NavLink to="/forum" className="nav-link" exact> FORUM </NavLink></li>
-                        <li className="nav-item"> <NavLink to="/top-players" className="nav-link" exact> STORE </NavLink></li>
+                        <li className="nav-item"> <NavLink to="/store" className="nav-link" exact> STORE </NavLink></li>
                     </ul>
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item"><NavLink to="/register" className="nav-link" exact> REGISTER </NavLink>  </li>
-                        <li className="nav-item"> <NavLink to="/register" className="nav-link" exact> LOGIN </NavLink> </li>
+                        <li className="nav-item"> <NavLink to="/login" className="nav-link" exact> LOGIN </NavLink> </li>
                     </ul>
                 </div>
             </nav>

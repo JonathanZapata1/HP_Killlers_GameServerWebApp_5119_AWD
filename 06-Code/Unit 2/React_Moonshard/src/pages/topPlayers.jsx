@@ -9,7 +9,7 @@ import Table from 'react-bootstrap/Table';
 
 import { getRanking } from '../services/api.js'
 const Top = () => {
-
+  var [pos,setPos] = useState(1);
   const [users, setUsers]= useState([]);
 
   useEffect(()=>{
@@ -22,27 +22,34 @@ const Top = () => {
   };
 return(
   <div className="main-body">
-  <Carrsel/>
-  <Information/> 
+
   <div className='down-style item3 grid-item'>
       <div className='down-text'>
-            <Table striped bordered hover variant="dark" style={{width:600}}>
+      <h2> POSITION OF PLAYERS CALCULATED BY RANKING</h2> 
+            <Table striped bordered hover variant="dark" style={{width:700}}>
                 <thead >
-                    <tr>
+                    <tr className='table-head'>
+                      <th scope="col"> Position</th>
                         <th scope="col">ID</th>
-                        <th scope="col">USER NAME</th>
-                        <th scope="col" >RANKING POINTS</th>
+                        <th scope="col">User Name</th>
+                        <th scope="col" >Ranking Points</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {
-                        users.map(user =>(
-                          <tr key ={user.id}>  
-                            <td> {user.id} </td>
-                            <td>{user.userName}</td>
-                            <td>{user.rankPoints}</td>
-                            </tr>
-                        ))
+                  {
+                        users.map(user=>{
+                          user.pos = pos;
+                          pos++;
+                          return(
+                            <tr key ={user.id}> 
+                              <td>{user.pos}</td> 
+                              <td> {user.id} </td>
+                              <td>{user.userName}</td>
+                              <td>{user.rankPoints}</td>
+                              </tr>
+                          )
+                        }
+                          )
                     }
                    
                 </tbody>

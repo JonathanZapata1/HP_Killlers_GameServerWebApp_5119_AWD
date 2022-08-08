@@ -20,7 +20,7 @@ spendedMoney: user.spendedMoney, favoriteItem: user.favoriteItem })
 
 export const getRanking = async() => {
     try{
-        const response = await axios.get(`http://54.210.116.27:3005/GameServer/users/ranking/status/all`);
+        const response = await axios.get(`http://localhost:3005/GameServer/users/ranking/status/all`);
         return response
     }
     catch(error){

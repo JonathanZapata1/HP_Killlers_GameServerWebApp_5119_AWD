@@ -1,0 +1,29 @@
+.form-number{
+    color:aqua;
+    width: 100%;
+    position:"relative";
+    left:"130px";
+    border-radius: 0;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid rgb(245, 249, 250);
+
+}
+.form-number:focus{
+
+}
+input[type=text]:focus {
+
+}
+.input-form{
+    display: block;
+    background-color: inherit;
+    width: 100%;
+    color:aqua;
+    border: none;
+    border-bottom: 2px solid rgb(245, 249, 250);
+}
+.main-form{
+    justify-content: center;
+
+}

@@ -14,6 +14,7 @@ const Register = () => {
     email: "",
     userName: "",
     gameName: "",
+    mainClass: "",
     isActive: true,
     accountMoney: 0,
     timePlayed: 0,
@@ -29,8 +30,13 @@ const Register = () => {
 
   async function addUserInformation(e) {
     e.preventDefault();
-
+    var today = new Date();
+    setUser(today = user.lastTimeVisited);
     await addUser(user);
+  }
+
+  async function generateSelectClass(e) {
+
   }
 
   return (
@@ -39,21 +45,26 @@ const Register = () => {
       <Information />
       <div className='down-style item3 grid-item'>
         <div className='down-text'>
-          <Form>
+          <Form className="main-form">
             <label> Enter your ID</label>
-            <input style={{width:"200px",position:"relative", left:"130px"}} type="number" className="form-control" onChange={(e) => onValueChange(e)} name="id" />
+            <input type="number" className="input-form form-number" onChange={(e) => onValueChange(e)} name="id" />
             <label> Enter your Email</label>
-            <input type="email" className="form-control" onChange={(e) => onValueChange(e)} name="email" />
+            <input type="email" className="input-form form-text" onChange={(e) => onValueChange(e)} name="email" />
             <label> Enter the way to be know here</label>
-            <input type="text" className="form-control" onChange={(e) => onValueChange(e)} name="userName" />
-            <label> Enter your WOW name Game</label>
-            <input type="text" className="form-control" onChange={(e) => onValueChange(e)} name="gameName" />
+            <input type="text" className="input-form form-text" onChange={(e) => onValueChange(e)} name="userName" />
+            <label> Enter your Main Class</label>
+            <select className="input-form form-text" onChange={(e) => onValueChange(e)} name="mainClass" >
+            <option value="1" disabled style={{background: "black", color: "aliceblue"}}>Categories</option>
+                    <option value="2" style={{background: "black", color: "aliceblue"}}>Warrior</option>
+                    <option value="3" style={{background: "black", color: "aliceblue"}}>Rogue</option>
+                    <option value="4" style={{background: "black", color: "aliceblue"}}>Mage</option>
+              </select>
             <label> Enter your actual Item</label>
-            <input type="text" className="form-control" onChange={(e) => onValueChange(e)} name="favoriteItem" />
+            <input type="text" className="input-form form-text" onChange={(e) => onValueChange(e)} name="favoriteItem" />
             <label>Enter the money you want to introduce in this account</label>
-            <input style={{width:"200px",position:"relative", left:"130px"}}type="number" className="form-control" onChange={(e) => onValueChange(e)} name="accountMoney" />
+            <input  type="number" className="input-form form-number" onChange={(e) => onValueChange(e)} name="accountMoney" />
             <label> Enter the points of your account in game</label>
-            <input style={{width:"200px",position:"relative", left:"130px"}} type="number" className="form-control" onChange={(e) => onValueChange(e)} name="pointsObtained" />
+            <input  type="number" className="input-form form-number" onChange={(e) => onValueChange(e)} name="pointsObtained" />
 
             <Button  style={{position:"relative", top:"10px"}}variant="secondary" onClick={addUserInformation}>Submit</Button>
           </Form>
