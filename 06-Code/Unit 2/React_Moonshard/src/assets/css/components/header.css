@@ -1,111 +1,42 @@
 
 /*New nav*/
-.nav-modify {
-    background-image: url('../../img/navbar.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 1200px 180px;
-    align-items: center;
-    padding: 4rem;
-    box-sizing: border-box;
+
+.navbar{
+    background-color: #0B0B0C;
+    opacity:0.9;
+}
+.navbar a {
+    color: rgb(19, 149, 172);
+    font-size: 1.25em;
+
+}
+.nav-link:hover{
+    color:rgb(191, 228, 236);
+}
+.white{
+    color:rgb(19, 149, 172);
+}
+.navbar-toggler{
+    border-color:rgb(19, 149, 172);
+}
+.nav-logo{
+    height: 2.25em;
+    width: auto;
+    position: relative;
+   left: 0.625em; 
+}
+.navbar-nav li{
+    padding-left:0.5em;
+    padding-right: 0.5em;
+    margin: auto 0.5em auto 0.5em;
+}
+.navbar-brand{
     justify-content: center;
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
+    text-align:center;
 }
-
-.nav-modify ul {
-    padding: 0px;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
+.ml-auto{
+    margin-left: auto!important;
 }
-
-.nav-modify a {
-    text-decoration: none;
-    text-align: center;
-}
-
-.nav-modify li {
-    position: relative;
-    bottom: 3rem;
-}
-
-.nav-modify ul li {
-    display: inline-block;
-    line-height: 80px;
-
-}
-
-.nav-modify ul li a {
-    color: rgb(6, 121, 129);
-    font-size: 18px;
-    padding: 5px 10px;
-    text-shadow: 0.5px 0.5px rgb(6, 121, 129);
-}
-
-.part1 {
-    position: relative;
-    right: 9.5rem;
-}
-
-.part2 {
-    position: relative;
-    left: 9rem;
-}
-
-
-/*nav menu*/
-header .nav-btn {
-    padding: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    font-size: 2rem;
-    position:absolute;
-}
-
-@media only screen and (max-width:860px) {
-    header .nav-btn {
-        visibility: visible;
-        opacity: 1;
-     
-    }
-
-    .nav-modify {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 1s;
-        transform: translateY(-100vh);
-        flex-direction: row;
-
-    }
-
-    header .responsive_nav {
-        transform: none;
-    }
-
-    nav .nav-close-btn {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-    }
-
-    .nav-modify ul {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(191, 228, 236);;
 }

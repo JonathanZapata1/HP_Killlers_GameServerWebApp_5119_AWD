@@ -1,8 +1,9 @@
 import { NavLink } from 'react-router-dom';
 import '../assets/css/components/header.css';
-
-import {FaBars,FaTimes} from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useRef } from 'react';
+import logo from '../assets/img/favicon.ico'
 
 function Header(){
 const navRef = useRef();
@@ -12,26 +13,30 @@ const showNavbar=()=>{
 }
 
 return(
+
+
     <header>
-        <nav ref={navRef} className='nav-modify'>
-            <ul className='part1'>
-                <li> <NavLink to="/" exact >  Home </NavLink> </li>
-                <li> <NavLink to="/register" exact> Register </NavLink> </li>
-                <li> <NavLink to="/how-to-connect" exact> How to connect </NavLink>  </li>
-            </ul>
-            <ul className='part2'>
-                <li> <NavLink to="/status-server" exact> Server Status </NavLink></li>
-                <li> <NavLink to="/top-players" exact> Top players </NavLink></li>
-                <li>  <NavLink to="/forum" exact> Forum </NavLink></li>
-            </ul>
-            <button className='nav-btn nav-close-btn' onClick={showNavbar}>
-                <FaTimes/>
-            </button>
-    </nav>
-    <button className='nav-btn' onClick={showNavbar}>
-        <FaBars/>
-    </button>
-    </header >
+            <nav ref={navRef} className="navbar navbar-expand-md navegation1 px-1">
+                <NavLink to="/" className="nav-link navbar-brand" exact><img  className="nav-logo" src={logo}></img></NavLink>
+                <button className="navbar-toggler navbar-button" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <FontAwesomeIcon className="white" icon={faBars}></FontAwesomeIcon>
+
+                </button>
+                <div className="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item" > <NavLink to="/how-to-connect" className="nav-link" exact> GET STARTED </NavLink> </li>
+                        <li className="nav-item"> <NavLink to="/status-server" className="nav-link" exact> SERVER STATUS </NavLink></li>
+                        <li className="nav-item"> <NavLink to="/top-players" className="nav-link" exact> TOP PLAYERS </NavLink></li>
+                        <li className="nav-item">  <NavLink to="/forum" className="nav-link" exact> FORUM </NavLink></li>
+                        <li className="nav-item"> <NavLink to="/top-players" className="nav-link" exact> STORE </NavLink></li>
+                    </ul>
+                    <ul className="navbar-nav ml-auto">
+                        <li className="nav-item"><NavLink to="/register" className="nav-link" exact> REGISTER </NavLink>  </li>
+                        <li className="nav-item"> <NavLink to="/register" className="nav-link" exact> LOGIN </NavLink> </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
 );
 }
