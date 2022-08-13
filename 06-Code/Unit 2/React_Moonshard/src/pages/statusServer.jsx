@@ -1,7 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/pages/statusServer.css';
 import '../assets/css/pages/main.css';
-import Discord from '../components/discord.jsx';
 import img from '../assets/img/statusserver.png';
 
 const ServerStatus = () => (

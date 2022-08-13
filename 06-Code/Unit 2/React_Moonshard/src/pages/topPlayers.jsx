@@ -2,14 +2,12 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import '../assets/css/pages/topPlayers.css';
 import '../assets/css/pages/main.css';
-import Carrsel from '../components/carrusel';
-import Information from '../components/information';
 import Discord from '../components/discord';
 import Table from 'react-bootstrap/Table';
 
 import { getRanking } from '../services/api.js'
 const Top = () => {
-  var [pos,setPos] = useState(1);
+  var [pos] = useState(1);
   const [users, setUsers]= useState([]);
 
   useEffect(()=>{
