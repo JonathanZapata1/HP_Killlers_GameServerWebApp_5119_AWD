@@ -1,0 +1,19 @@
+/*discord position*/
+.discord-style{
+    background-color: rgb(3, 0, 17);
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    min-width: 25%;
+    max-width: 100%;
+    position: relative;
+}
+.discord-text{
+    text-align: center;
+
+}
+#discord-img{
+    position:relative;
+    left: 3.125;
+
+}

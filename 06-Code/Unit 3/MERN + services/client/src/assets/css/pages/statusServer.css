@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,386&display=swap');
+
+.statusPresentation{
+    background-image: url(../../img/3-6.jpg);
+    height:40em;
+    width: 95%;
+    background-size:cover;
+    opacity: 1;
+    margin: 0.5em auto 0.5em auto;
+    padding:10em 0;
+}
+.down-style-modified{
+    display: flex;
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    background-color: rgba(3, 0, 17,0.7);
+}
+.status-body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.status-body .grid-item{
+  font-size: 20px;
+  padding:0.5em;
+}
+
+.statusPresentation h2{
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 3.5em;
+    margin:auto 2em;
+    color: rgb(191, 228, 236);
+    letter-spacing: 0em;
+}
+
+.statusPresentation p{
+    font-size: 1.75em;
+    margin:auto 1em;
+    padding: 3.75em 0;
+    color: rgb(157, 192, 232);
+}

@@ -1,0 +1,42 @@
+
+/*New nav*/
+
+.navbar{
+    background-color: #0B0B0C;
+    opacity:0.9;
+}
+.navbar a {
+    color: rgb(19, 149, 172);
+    font-size: 1.25em;
+
+}
+.nav-link:hover{
+    color:rgb(191, 228, 236);
+}
+.white{
+    color:rgb(19, 149, 172);
+}
+.navbar-toggler{
+    border-color:rgb(19, 149, 172);
+}
+.nav-logo{
+    height: 2.25em;
+    width: auto;
+    position: relative;
+   left: 0.625em; 
+}
+.navbar-nav li{
+    padding-left:0.5em;
+    padding-right: 0.5em;
+    margin: auto 0.5em auto 0.5em;
+}
+.navbar-brand{
+    justify-content: center;
+    text-align:center;
+}
+.ml-auto{
+    margin-left: auto!important;
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(191, 228, 236);
+}

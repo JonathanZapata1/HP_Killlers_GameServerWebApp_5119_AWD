@@ -1,0 +1,39 @@
+/* body  */
+
+.main-body{
+    width: 99%;
+    height: 99%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-body .grid-item{
+  text-align: center;
+  font-size: 20px;
+  margin:0.5em;
+  padding:0.5em;
+}
+
+
+/*welcome position*/
+.down-style {
+    background-color: rgb(3, 0, 17);
+    opacity: 0.7;
+    display: flex;
+    min-width: 65%;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.down-text{
+    text-align: center;
+    padding-left:0.125em;
+    margin-left: 1.25em;
+    color:white;
+}
